@@ -1,6 +1,8 @@
 <?php
 
 //パスワードを記録したファイルの場所
+echo 'パスワードを記録したファイルの場所';
+echo '<br>'
 echo __FILE__;
 // /Applications/MAMP/htdocs/php_test/mainte/test.php
 
