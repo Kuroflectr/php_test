@@ -1,15 +1,8 @@
 {
-    "name": "hayashi/composertest",
     "autoload": {
         "psr-4": {
-            "Hayashi\\Composertest\\": "src/"
+            "Src\\": "src/"
         }
     },
-    "authors": [
-        {
-            "name": "Kuroflectr",
-            "email": "ike.kuroflectr@gmail.com"
-        }
-    ],
     "require": {}
 }
