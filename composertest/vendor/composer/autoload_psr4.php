@@ -6,5 +6,6 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Hayashi\\Composertest\\' => array($baseDir . '/src'),
+    'Src\\Models\\' => array($baseDir . '/src/Models'),
+    'Src\\Controllers\\' => array($baseDir . '/src/Controllers'),
 );

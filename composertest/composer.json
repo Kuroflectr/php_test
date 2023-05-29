@@ -1,8 +1,17 @@
 {
+    "name": "hayashi/composertest",
     "autoload": {
         "psr-4": {
-            "Src\\": "src/"
+            "Src\\Models\\": "src/Models", 
+            "Src\\Controllers\\": "src/Controllers" 
+
         }
     },
+    "authors": [
+        {
+            "name": "Kuroflectr",
+            "email": "ike.kuroflectr@gmail.com"
+        }
+    ],
     "require": {}
 }
