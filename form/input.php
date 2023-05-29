@@ -16,14 +16,6 @@ function h($str)
 }
 
 
-$text = "＄_POSTの確認↓"; 
-echo '<pre>'; 
-echo $text; 
-echo "<br>"; 
-echo '------------'; 
-echo '</pre>'; 
-
-
 if (!empty($_POST)){
     echo '<pre>'; 
     var_dump($_POST); 
@@ -241,10 +233,17 @@ $token = $_SESSION['csrfToken'];
 <!--============================= -->
 <?php if($pageFlag === 2 ) : ?>
 <!-- csrf tokenの値をこっちに確認する -->
-<?php if($_POST['csrf'] === $_SESSION['scrfToken']):?>
+<?php if($_POST['csrf'] === $_SESSION['csrfToken']):?>
+
+<?php require '../mainte/insert.php'; 
+    // DB接続関数 POSTの内容を送信し更新する
+    insertContact($_POST); 
+?>
+
+
 送信が完了しました。
 <!-- csrf tokenを削除する -->
-<?php unset($_SESSION['scrfToken']); ?>
+<?php unset($_SESSION['csrfToken']); ?>
 <?php endif; ?>
 <?php endif; ?>
 
